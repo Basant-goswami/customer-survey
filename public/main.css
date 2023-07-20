@@ -1,0 +1,50 @@
+.carousel-control-prev{
+    color: black;
+    size : 12px;
+}
+#carouselExampleIndicators{
+    height: 70vh;
+    background-color: pink;
+}
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    margin-top: 40px;
+}
+#leftbutton, #rightbutton{
+    height: 20px;
+    top: 80%;
+    opacity: 1;   
+}
+.visually{
+    border-radius: 4px;
+    padding: 2px 8px;
+    background-color: rgb(247, 56, 231);
+}
+#carouselExampleIndicators .carousel-indicators button{
+    background-color: black;
+}
+#submit{
+    position: relative;
+    left: 45%;
+    bottom: 30px;
+    border-radius: 12px;
+}
+#heading{
+    color: red;
+    text-align: center;
+    margin-top: 12px;
+}
+.slideNo{
+    /* float: right; */
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.carousel-inner{
+    margin-top: 40px;
+}

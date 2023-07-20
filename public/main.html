@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer survey page</title>
+
+  <link rel="stylesheet" href="./main.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#questionNocarouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <form method="post">
+          <div class="carousel-item active">
+            <p class="slideNo">1/5</p>
+            <h3 id="heading">Customer Survey</h3>
+            <div class="feedback">
+              <div>
+                <p class="questions"><b>1. How satisfied are you with our products?</b></p>
+                <input type="radio" name="FirstQues" value="1">1
+                <input type="radio" name="FirstQues" value="2">2
+                <input type="radio" name="FirstQues" value="3">3
+                <input type="radio" name="FirstQues" value="4">4
+                <input type="radio" name="FirstQues" value="5">5
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <p class="slideNo">2/5</p>
+            <div class="feedback">
+              <div>
+                <p class="questions"><b>2. How fair are the prices compared to similar retailers?</b></p>
+                <input type="radio" name="SecondQues" value="1">1
+                <input type="radio" name="SecondQues" value="2">2
+                <input type="radio" name="SecondQues" value="3">3
+                <input type="radio" name="SecondQues" value="4">4
+                <input type="radio" name="SecondQues" value="5">5
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <p class="slideNo">3/5</p>
+            <div class="feedback">
+              <div>
+                <p class="questions"><b>3. How satisfied are you with the value for money of your purchase?</b></p>
+                <input type="radio" name="ThirdQues" value="1">1
+                <input type="radio" name="ThirdQues" value="2">2
+                <input type="radio" name="ThirdQues" value="3">3
+                <input type="radio" name="ThirdQues" value="4">4
+                <input type="radio" name="ThirdQues" value="5">5
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <p class="slideNo">4/5</p>
+            <div class="feedback">
+              <div>
+                <p class="questions"><b>4. On a scale of 1-10 how would you recommend us to your friends and family?</b>
+                </p>
+                <input type="radio" name="FourthQues" value="1">1
+                <input type="radio" name="FourthQues" value="2">2
+                <input type="radio" name="FourthQues" value="3">3
+                <input type="radio" name="FourthQues" value="4">4
+                <input type="radio" name="FourthQues" value="5">5
+                <input type="radio" name="FourthQues" value="6">6
+                <input type="radio" name="FourthQues" value="7">7
+                <input type="radio" name="FourthQues" value="8">8
+                <input type="radio" name="FourthQues" value="9">9
+                <input type="radio" name="FourthQues" value="10">10
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <p class="slideNo">5/5</p>
+            <div class="feedback">
+              <div>
+                <p class="questions"><b>5. What could we do to improve our service?</b></p>
+                <div class="form-floating">
+                  <textarea class="form-control" name="FifthQues" placeholder="Leave a comment here"
+                    id="floatingTextarea" style="height: 100px"></textarea>
+                  <label for="floatingTextarea">Enter your comments here...</label>
+                </div>
+              </div>
+            </div>
+            <button id="submit" class="btn btn-primary" type="submit" onclick="if(!func()) {return false}">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <button id="leftbutton" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <span class="visually">Previous</span>
+      </button>
+      <button id="rightbutton" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <span class="visually">Next</span>
+      </button>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

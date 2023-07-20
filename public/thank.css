@@ -1,0 +1,23 @@
+.container{
+    height: 80vh;
+    width: 100%;
+}
+.mainbox{
+    height: 70%;
+    min-width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    border-radius: 8px;
+    color: white;
+}
+#result{
+    color: red;
+    font-family: cursive;
+    text-align: center;
+}
+h2, p {
+    text-align: center;
+}

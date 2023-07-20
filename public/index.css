@@ -1,0 +1,37 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+}
+body::before{
+    content: "";
+    background: url('./bgc.jpg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+}
+.mainbox{
+    width: 100%;
+    height: 80vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    position: absolute;
+    top: 30%;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    color: red;
+    margin-bottom: 12px;
+}
+h2{
+    margin: 6px;
+    
+}
